@@ -1,20 +1,20 @@
 package com.alibaba.datax.plugin.rdbms.util;
 
-import com.alibaba.datax.common.exception.DataXException;
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import com.alibaba.datax.common.exception.DataXException;
 
 /**
  * refer:http://blog.csdn.net/ring0hx/article/details/6152528
  * <p/>
  */
 public enum DataBaseType {
-    MySql("mysql", "com.mysql.jdbc.Driver"),
+    MySql("mysql", "com.mysql.cj.jdbc.Driver"),
     Tddl("mysql", "com.mysql.jdbc.Driver"),
     DRDS("drds", "com.mysql.jdbc.Driver"),
     Oracle("oracle", "oracle.jdbc.OracleDriver"),
-    SQLServer("sqlserver", "com.microsoft.sqlserver.jdbc.SQLServerDriver"),
+    SQLServer("sqlserver", "net.sourceforge.jtds.jdbc.Driver"),
     PostgreSQL("postgresql", "org.postgresql.Driver"),
     RDBMS("rdbms", "com.alibaba.datax.plugin.rdbms.util.DataBaseType"),
     DB2("db2", "com.ibm.db2.jcc.DB2Driver"),
